@@ -1,0 +1,39 @@
+body{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-image: url(./images/bg2.jpg);
+    background-size: cover;
+    padding-top: 7px;
+    height: 96vh;
+}
+
+#choice-selected img{
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    border: 1px solid rgb(60, 60, 60);;
+}
+
+#opponent-score{
+    color: #f44786;
+}
+
+#user-score{
+    color: #249f9c;
+}
+
+#instructions{
+    width: 410px;
+    height: 35px;
+}
+
+#choices{
+    width: 240px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#choices img{
+    width: 80px;
+    height: 80px;
+}
