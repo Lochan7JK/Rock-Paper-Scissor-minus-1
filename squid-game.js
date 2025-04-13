@@ -41,7 +41,6 @@ function selectChoice(){
         for(let i = 0; i < 2; i++){
             let random = Math.floor(Math.random() * 3);
             let opponentChoice = choices[random];
-            // document.getElementById(`opponent-choice${i}`).src = "./images/" + opponentChoice + ".png";
             document.getElementById("opponent-choice" + i).src = "./images/" + opponentChoice + ".png";
         }
 
@@ -111,7 +110,7 @@ function checkWinner(){
             userScore++;
     }
 
-///// my code from here
+    
     if(userScore < 3 && opponentScore < 3){
         document.getElementById("user-score").innerText = userScore;
         document.getElementById("opponent-score").innerText = opponentScore;
@@ -119,25 +118,18 @@ function checkWinner(){
     }
     else{
         startAgain();
-        // userScore = 0;
-        // opponentScore = 0;
-        // document.getElementById("user-score").innerHTML = "0"
-        // document.getElementById("opponent-score").innerHTML = "0"
-        // clearChoices();
     }
 }
 
 function startAgain(){
     if(userScore == 3){
         document.getElementById("user-score").innerHTML = "You Won!"
-        // document.getElementById("choices").hidden = true;
     }
     if(opponentScore == 3){
         document.getElementById("opponent-score").innerHTML = "Opponent Won... KILL🔪 The Other Player!!"
-        // document.getElementById("choices").hidden = true;
     }
 }
-///// my code till here
+
 
 function clearChoices(){
     user = null;
